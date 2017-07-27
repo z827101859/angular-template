@@ -14,7 +14,8 @@ const routes = [
         SharedModule, RouterModule.forChild(routes)
     ],
     providers: [],
-    declarations: [ListComponent]
+    declarations: [ListComponent],
+    exports: [ListComponent],
 })
 export class ListModule {
     static forRoot() {
